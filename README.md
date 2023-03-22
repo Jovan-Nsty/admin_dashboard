@@ -1,1 +1,1 @@
-# admin_dashboard
+Building a full dasboard design with HTML & CSS, mostly focusing on using newly learned Grid layout tool.
