@@ -4,6 +4,14 @@
     box-sizing: border-box;
 }
 
+:root {
+    --sidebar-text-color: #fff;
+}
+
+html {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 html,
 body {
     height: 100vh;
@@ -11,12 +19,62 @@ body {
 
 body {
     display: grid;
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: 1fr 5fr;
     background-color: #eee;
 }
 
 #sidebar {
     background-color: #0ea5e9;
+}
+
+#sidebar-title {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 20px;
+    padding: 16px;
+}
+
+#sidebar h1 {
+    color: var(--sidebar-text-color);
+    font-size: 2.2rem;
+}
+
+#sidebar-navigation {
+    display: grid;
+    grid-template-rows: 3fr 1fr;
+    justify-content: center;
+    align-items: center;
+}
+
+#sidebar-navigation>ul {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+}
+
+#sidebar-navigation>ul>li {
+    list-style-type: none;
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: var(--sidebar-text-color);
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+#sidebar-navigation>ul>li {
+    cursor: pointer;
+    width: min-content;
+}
+
+#sidebar svg {
+    fill: #fff;
+    height: 30px;
+}
+
+#sidebar-title svg {
+    height: 50px;
 }
 
 #main {
@@ -25,5 +83,5 @@ body {
 }
 
 #header {
-    background-color: #fff;
+    background-color: var(--sidebar-text-color);
 }
