@@ -7,6 +7,7 @@
 :root {
     --sidebar-text-color: #fff;
     --color-main-blue: #0ea5e9;
+    --color-main-grey: #e2e8f0;
 }
 
 html {
@@ -21,7 +22,7 @@ body {
 body {
     display: grid;
     grid-template-columns: 1fr 5fr;
-    background-color: #eee;
+    background-color: var(--color-main-grey);
 }
 
 #sidebar {
@@ -70,7 +71,7 @@ body {
 }
 
 #sidebar svg {
-    fill: #fff;
+    fill: var(--sidebar-text-color);
     height: 30px;
 }
 
@@ -112,7 +113,7 @@ input[type='search'] {
     width: 45vw;
     min-width: 450px;
     height: 30px;
-    background-color: #eee;
+    background-color: var(--color-main-grey);
     border-radius: 1rem;
     border: none;
     padding: 10px;
@@ -128,6 +129,10 @@ input[type='search']:focus {
     align-items: center;
     justify-content: center;
     gap: 20px;
+}
+
+#notification-centre>* {
+    cursor: pointer;
 }
 
 #notification-centre img {
@@ -164,14 +169,14 @@ input[type='search']:focus {
 }
 
 #header-second-row button {
-    padding: 15px 30px;
-    width: 110px;
+    padding: 15px;
+    width: 105px;
     border: none;
     border-radius: 1.7rem;
     font-size: 1rem;
     font-weight: bold;
     background-color: var(--color-main-blue);
-    color: #fff;
+    color: var(--sidebar-text-color);
     cursor: pointer;
 }
 
@@ -216,7 +221,7 @@ input[type='search']:focus {
 
 #announcements,
 #trending {
-    background-color: #fff;
+    background-color: var(--sidebar-text-color);
     padding: 30px;
     border-radius: 1rem;
     width: 300px;
