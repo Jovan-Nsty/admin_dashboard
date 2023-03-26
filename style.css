@@ -281,7 +281,7 @@ input[type='search']:focus {
 
 .trending-cards:hover,
 .announcements-cards:hover {
-    transform: scale(1.04);
+    transform: scale(1.03);
 }
 
 #main-content,
@@ -297,7 +297,7 @@ input[type='search']:focus {
 
 #cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     gap: 30px;
     margin: 20px;
 }
