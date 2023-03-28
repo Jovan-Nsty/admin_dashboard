@@ -214,8 +214,8 @@ input[type='search']:focus {
 
 #content {
     display: grid;
-    grid-template-columns: 3fr 1fr;
-    gap: 20px;
+    grid-template-columns: 1fr 360px;
+
 }
 
 #side-content {
@@ -286,7 +286,8 @@ input[type='search']:focus {
 
 #main-content,
 #side-content {
-    margin-left: 25px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 #main-content h2 {
